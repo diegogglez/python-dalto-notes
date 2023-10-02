@@ -1,6 +1,5 @@
 
 string1 = 'Hola soy Dalto'
-string2 = 'Bienvenido maquinola'
 
 #! Todos los metodos son funciones pero no todas las funciones son métodos. Los métodos son funciones que 
 #! se aplican a un objeto.
