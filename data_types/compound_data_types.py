@@ -4,6 +4,7 @@ list = ['Diego García', 'González', 27, 1.86, True]
 print(list);
 
 #* declarando un tuple, no se puede modificar
+# Solo podemos buscar elementos y usar el index()
 tuple = ('Diego García', 'González', 27, 1.86, True)
 print(tuple)
 # Esto es válido
