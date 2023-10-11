@@ -1,5 +1,5 @@
 # En Python se usa el bucle 'for in'
-# TODOS ESTOS BUCLES FUNCIONAN IGUAL PARA LISTAS Y PARA TUPLAS.
+# TODOS ESTOS BUCLES FUNCIONAN IGUAL PARA LISTAS, TUPLAS y CONJUNTOS.
 
 animals = ['perro', 'gato', 'loro', 'cocodrilo']
 numbers = [10, 23, 12, 70]
@@ -64,7 +64,7 @@ for number in range(10):
   # 9
   
 # Podemos usar esta función para recorrer listas por el índice
-#! Esta forma no es óptima
+#! Esta forma no es óptima (Y no funciona en conjuntos --> TypeError: 'set' object is not subscriptable)
 for number in range(len(numbers)):
   print(numbers[number])
   # 10
@@ -104,3 +104,8 @@ for number in numbers:
   print(f'Ejecutando el valor actual del bucle: {number}')
 else: 
   print('El bucle terminó')
+  # Ejecutando el valor actual del bucle: 10
+  # Ejecutando el valor actual del bucle: 23
+  # Ejecutando el valor actual del bucle: 12
+  # Ejecutando el valor actual del bucle: 70
+  # El bucle terminó
