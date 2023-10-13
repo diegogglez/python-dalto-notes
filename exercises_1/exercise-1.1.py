@@ -9,14 +9,14 @@ average_raw = 5
 dalto_raw = 3.5
 
 # Diferencias de duración
-diference_with_min = 100 - (dalto_course / other_courses_min * 100)
-diference_with_max = 100 - (dalto_course * 1000 // other_courses_max / 10) 
+diference_with_min = 100 - round(dalto_course / other_courses_min, 1)
+diference_with_max = 100 - round(dalto_course // other_courses_max, 1) 
 # Añadimos ceros para borrar menos decimales y optener un resultado más preciso con la división //
 diference_with_average = 100 - (dalto_course / other_courses_Average * 100)
 
 # Calculando el porcentaje de tiempo vacío
-average_empty_time = 100 - (other_courses_Average * 1000 // average_raw / 10) 
-dalto_empty_time = 100 - (dalto_course * 1000 // dalto_raw / 10) 
+average_empty_time = 100 - round(other_courses_Average // average_raw, 1) 
+dalto_empty_time = 100 - round(dalto_course // dalto_raw, 1) 
 
 
 # Mostrando las diferencias de duración (ejercicio A)
