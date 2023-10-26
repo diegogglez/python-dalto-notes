@@ -4,7 +4,7 @@
 names = ['Lucas', 'Matias', 'Camila', 'Pedrp', 'Roberto']
 lastnames = ['Dalto', 'Zing', 'Dalto', 'Robertix', 'Tarado']
 
-with open('solving_archives_probles\\names_and_lastnames.txt', 'w') as archive:
+with open('archives_problems\\names_and_lastnames.txt', 'w') as archive:
   archive.writelines('Los datos son: \n\n')
   [archive.writelines(f'Nombre: {n}\nApellido: {l}\n------------\n') for n, l in zip(names, lastnames)]
   
